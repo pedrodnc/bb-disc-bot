@@ -1,0 +1,11 @@
+bot_config.json
+sender_config.json
+config.json
+*.log
+logs/
+images/
+venv/
+__pycache__/
+*.pyc
+.env
+puntuaciones.txt

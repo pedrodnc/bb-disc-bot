@@ -1,0 +1,16 @@
+[Unit]
+Description=bb-disc-bot Auto-Responder
+After=network.target
+
+[Service]
+Type=simple
+# Cambia User y WorkingDirectory a tu configuracion
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/bb-disc-bot
+ExecStart=/home/TU_USUARIO/bb-disc-bot/venv/bin/python3 bot.py
+Restart=on-failure
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
